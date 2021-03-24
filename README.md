@@ -1,6 +1,6 @@
 # Newform
 
-learning Anfular , Material Angular, Reactiveforms, 
+learning AngularCLI , Material Angular, Reactiveforms, 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
