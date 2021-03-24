@@ -1,42 +1,36 @@
-<mat-drawer-container  class="example-container" autosize>
+<div class="fullcontainer">
+  <mat-drawer-container  class="example-container">
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <h1> MY NEW APP</h1>
- <div fxLayoutGap="10px">
-   <div class="example-button">
-   <button mat-fab color=secondary (click)="showFiller = !showFiller" >
-     <mat-icon>home</mat-icon>
-   </button>
-   <p *ngIf="showFiller">about me </p>
-   <button mat-fab color=secondary (click)="showFiller = !showFiller" >
-     <mat-icon>chat</mat-icon>
-   </button>
-   <p *ngIf="showFiller">chat with me</p>
-   <button mat-fab color=secondary (click)="showFiller = !showFiller" >
-     <mat-icon>store</mat-icon>
-   </button>
-   <p *ngIf="showFiller">shop my stuff </p>
-   <button mat-fab color=primary (click)="showFiller = !showFiller" >
-     <mat-icon>login</mat-icon>
-   </button>
-   <p *ngIf="showFiller">Login </p>
- </div>
- </div>
-
+    <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>
+    <div fxLayoutGap="10px">
+      <div class="example-button">
+        <button mat-fab color=secondary (click)="$event">
+          <mat-icon matBadge="15" matBadgeOverlap="false" matBadgeColor="primary" >home</mat-icon>
+        </button>
+        <button mat-fab color=secondary (click)="$event">
+          <mat-icon matBadge="4" matBadgeOverlap="false" matBadgeColor="primary" >chat</mat-icon>
+        </button>
+        <button mat-fab color=secondary>
+          <mat-icon>feed</mat-icon>
+        </button>
+        <button mat-fab color=secondary>
+          <mat-icon>share</mat-icon>
+        </button>
+        <button mat-fab color=primary >
+          <mat-icon>login</mat-icon>
+        </button>
+      </div>
+    </div>
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <button type="button" mat-fab color="primary" (click)="drawer.toggle()">
+    <button type="button" mat-fab  color="primary" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
 
-  <div class="myform">
-    <h2>hier kommt das Form hin</h2>
-    <mat-form-field appearance="outline">
-      <mat-label>Outline form field</mat-label>
-      <input matInput placeholder="Placeholder">
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    </mat-form-field>
-  </div>
+ <app-form></app-form>
 
-</mat-drawer-container>
+
+</mat-drawer-container></div>
