@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './share/material.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 
@@ -15,6 +16,7 @@ import {MaterialModule} from './share/material.module';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
