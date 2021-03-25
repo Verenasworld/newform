@@ -1,7 +1,11 @@
 .myform{
   display: flex;
-  width: 40%;
+  width: 50%;
   flex-direction: column;
   margin: 50px;
 
+}
+h2{
+  font-weight: lighter;
+  letter-spacing: 3px;
 }

@@ -1,18 +1,38 @@
 <div class="myform">
-  <h2>Fill out the cool Form and see whats going on</h2>
-  <mat-form-field appearance="fill">
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
+<h2>FILL OUT MY COOL FORM AND START IN TO MY WORLD! </h2>
+  <mat-vertical-stepper #stepper>
+    <mat-step>
+      <form>
+        <ng-template matStepLabel>Fill out your Username</ng-template>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step >
+      <form >
+        <ng-template matStepLabel>Fill out your Email</ng-template>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="Janis-Joplin-Promenade 6-8/5/29"
+                 required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Send me the form </ng-template>
+      <p>Hi ( hier kommmt der Name hin der oben eingeben worden ist ) </p>
+      <div>
+        <button mat-button matStepperNext color="accent">Start</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
 </div>

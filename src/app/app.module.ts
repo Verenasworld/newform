@@ -5,20 +5,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './share/material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { FormComponent } from './component/form/form.component';
-
+import {MatCarouselModule} from '@ngmodule/material-carousel';
+import { CarouselComponent } from './component/carousel/carousel/carousel.component';
+import { NewsComponent } from './component/news/news.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    CarouselComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+    MatCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
