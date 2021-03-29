@@ -1,7 +1,7 @@
 <div class="fullcontainer">
   <mat-drawer-container  class="example-container">
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <h1> MY NEW APP</h1>
+    <h1> Some New <br> STUFF</h1>
     <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>
     <div fxLayoutGap="10px">
       <div class="example-button">
@@ -15,22 +15,30 @@
           <mat-icon>feed</mat-icon>
         </button>
         <button mat-fab color=secondary>
+          <mat-icon>play_arrow</mat-icon>
+        </button>
+        <button mat-fab color=secondary>
           <mat-icon>share</mat-icon>
         </button>
         <button mat-fab color=primary >
           <mat-icon>login</mat-icon>
         </button>
       </div>
+      <mat-divider></mat-divider>
+     <div class="blogbutton"> <button mat-stroked-button color="accent">DesignBlog</button>
+       <button mat-stroked-button color="accent">CodingBlog</button>
+       <button mat-stroked-button color="accent">SportBlog</button></div>
     </div>
   </mat-drawer>
 
   <div class="example-sidenav-content">
     <button type="button" mat-fab  color="primary" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
-    </button>
+    </button> VerinasWorld
   </div>
+    <app-carousel></app-carousel>
+    <app-form></app-form>
+    <app-news></app-news>
 
- <app-form></app-form>
-
-
+    <h3>Sport Quiz</h3>
 </mat-drawer-container></div>
