@@ -4,13 +4,14 @@
     <button mat-fab (click)="close('')"><mat-icon>clear</mat-icon></button>
 
    <div class="navibutton">
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary" matTooltip="Info about the action"
+             [matTooltipPosition]="position.value">
      <mat-icon>home</mat-icon>
    </button>
      <button mat-fab color="primary" >
        <mat-icon>feedback</mat-icon>
      </button>
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary"title="play">
        <mat-icon>play_circle_outline</mat-icon>
      </button>
      <button mat-fab color="primary" >
@@ -24,16 +25,13 @@
     <mat-divider></mat-divider>
     <div class="navibutton">
       <button mat-fab color="primary" >
-        <mat-icon>home</mat-icon>
-      </button>
-      <button mat-fab color="primary" >
         <mat-icon>feedback</mat-icon>
       </button>
       <button mat-fab color="primary" >
         <mat-icon>play_circle_outline</mat-icon>
       </button>
       <button mat-fab color="primary" >
-        <mat-icon>manage_accounts</mat-icon>
+        <mat-icon matBadge="1" matBadgeColor="accent">manage_accounts</mat-icon>
       </button>
       <button mat-fab color="primary" >
         <mat-icon>email</mat-icon>
@@ -50,7 +48,6 @@
     <router-outlet>
           <app-carousel></app-carousel>
           <app-form></app-form>
-          <app-news></app-news>
     </router-outlet>
 
   </mat-sidenav-content>
