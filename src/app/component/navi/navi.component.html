@@ -1,0 +1,33 @@
+<mat-sidenav-container
+  class="example-container" (backdropClick)="close('')">
+  <mat-sidenav #sidenav (keydown.escape)="close('')" disableClose>
+    <button mat-fab (click)="close('')"><mat-icon>clear</mat-icon></button>
+
+   <div class="navibutton">
+     <button mat-fab color="primary" >
+     <mat-icon>home</mat-icon>
+   </button>
+     <button mat-fab color="primary" >
+       <mat-icon>home</mat-icon>
+     </button>
+     <button mat-fab color="primary" >
+       <mat-icon>home</mat-icon>
+     </button>
+     <button mat-fab color="primary" >
+       <mat-icon>home</mat-icon>
+     </button>
+     <button mat-fab color="primary" >
+       <mat-icon>home</mat-icon>
+     </button>
+   </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
+    <p>{{reason}}</p>
+    <app-carousel></app-carousel>
+    <app-form></app-form>
+    <app-news></app-news>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

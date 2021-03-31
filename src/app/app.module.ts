@@ -8,20 +8,18 @@ import { FormComponent } from './component/form/form.component';
 import {MatCarouselModule} from '@ngmodule/material-carousel';
 import { CarouselComponent } from './component/carousel/carousel/carousel.component';
 import { NewsComponent } from './component/news/news.component';
-import {Routes} from '@angular/router';
+import {NaviComponent} from './component/navi/navi.component';
+import {RouterModule} from '@angular/router';
 
 
-const routes: Routes = [
-  {
-    path: '',
-  }
-];
+
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     CarouselComponent,
     NewsComponent,
+    NaviComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +27,7 @@ const routes: Routes = [
     MaterialModule,
     FlexLayoutModule,
     MatCarouselModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
