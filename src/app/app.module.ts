@@ -9,7 +9,8 @@ import {MatCarouselModule} from '@ngmodule/material-carousel';
 import { CarouselComponent } from './component/carousel/carousel/carousel.component';
 import { NewsComponent } from './component/news/news.component';
 import {NaviComponent} from './component/navi/navi.component';
-import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+
 
 
 
@@ -27,7 +28,7 @@ import {RouterModule} from '@angular/router';
     MaterialModule,
     FlexLayoutModule,
     MatCarouselModule,
-    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

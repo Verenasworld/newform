@@ -8,26 +8,51 @@
      <mat-icon>home</mat-icon>
    </button>
      <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+       <mat-icon>feedback</mat-icon>
      </button>
      <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+       <mat-icon>play_circle_outline</mat-icon>
      </button>
      <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+       <mat-icon>manage_accounts</mat-icon>
      </button>
      <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+       <mat-icon>email</mat-icon>
      </button>
    </div>
+    <p class="vericool">vericool</p>
+    <mat-divider></mat-divider>
+    <div class="navibutton">
+      <button mat-fab color="primary" >
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-fab color="primary" >
+        <mat-icon>feedback</mat-icon>
+      </button>
+      <button mat-fab color="primary" >
+        <mat-icon>play_circle_outline</mat-icon>
+      </button>
+      <button mat-fab color="primary" >
+        <mat-icon>manage_accounts</mat-icon>
+      </button>
+      <button mat-fab color="primary" >
+        <mat-icon>email</mat-icon>
+      </button>
+    </div>
+
+
+
   </mat-sidenav>
 
   <mat-sidenav-content>
     <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
     <p>{{reason}}</p>
-    <app-carousel></app-carousel>
-    <app-form></app-form>
-    <app-news></app-news>
+    <router-outlet>
+          <app-carousel></app-carousel>
+          <app-form></app-form>
+          <app-news></app-news>
+    </router-outlet>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
 
