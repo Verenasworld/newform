@@ -4,36 +4,44 @@
     <button mat-fab (click)="close('')"><mat-icon>clear</mat-icon></button>
 
    <div class="navibutton">
-     <button mat-fab color="primary" matTooltip="Info about the action"
+     <button mat-fab color="primary" matTooltip="HOME"
              [matTooltipPosition]="position.value">
      <mat-icon>home</mat-icon>
    </button>
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary" matTooltip="FEEDBACK"
+             [matTooltipPosition]="position.value">
        <mat-icon>feedback</mat-icon>
      </button>
-     <button mat-fab color="primary"title="play">
+     <button mat-fab color="primary" matTooltip="PLAY"
+             [matTooltipPosition]="position.value">
        <mat-icon>play_circle_outline</mat-icon>
      </button>
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary" matTooltip="ACCOUNT"
+             [matTooltipPosition]="position.value">
        <mat-icon>manage_accounts</mat-icon>
      </button>
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary"matTooltip="EMAIL"
+             [matTooltipPosition]="position.value">
        <mat-icon>email</mat-icon>
      </button>
    </div>
     <p class="vericool">vericool</p>
     <mat-divider></mat-divider>
     <div class="navibutton">
-      <button mat-fab color="primary" >
+      <button mat-fab color="primary" matTooltip="FEEDBACK"
+              [matTooltipPosition]="position.value">
         <mat-icon>feedback</mat-icon>
       </button>
-      <button mat-fab color="primary" >
+      <button mat-fab color="primary" matTooltip="PLAY"
+              [matTooltipPosition]="position.value">
         <mat-icon>play_circle_outline</mat-icon>
       </button>
-      <button mat-fab color="primary" >
+      <button mat-fab color="primary"matTooltip="ACCOUNT"
+              [matTooltipPosition]="position.value">
         <mat-icon matBadge="1" matBadgeColor="accent">manage_accounts</mat-icon>
       </button>
-      <button mat-fab color="primary" >
+      <button mat-fab color="primary" matTooltip="EMAIL"
+              [matTooltipPosition]="position.value">
         <mat-icon>email</mat-icon>
       </button>
     </div>
