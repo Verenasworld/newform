@@ -9,7 +9,10 @@ import {MatCarouselModule} from '@ngmodule/material-carousel';
 import { CarouselComponent } from './component/carousel/carousel/carousel.component';
 import { NewsComponent } from './component/news/news.component';
 import {NaviComponent} from './component/navi/navi.component';
-import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+import { HomeComponent } from './component/home/home.component';
+import {CanvaComponent} from './component/canva/canva.component';
+
 
 
 
@@ -19,7 +22,9 @@ import {RouterModule} from '@angular/router';
     FormComponent,
     CarouselComponent,
     NewsComponent,
-    NaviComponent
+    NaviComponent,
+    HomeComponent,
+    CanvaComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,7 @@ import {RouterModule} from '@angular/router';
     MaterialModule,
     FlexLayoutModule,
     MatCarouselModule,
-    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

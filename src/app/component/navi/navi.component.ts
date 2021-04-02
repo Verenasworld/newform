@@ -1,5 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatSidenav} from '@angular/material/sidenav';
+import {FormControl} from '@angular/forms';
+import {TooltipPosition} from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-navi',
@@ -8,6 +10,8 @@ import {MatSidenav} from '@angular/material/sidenav';
 })
 export class NaviComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
+  positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
+  position = new FormControl(this.positionOptions[0]);
 
   reason = '';
 
@@ -19,5 +23,13 @@ export class NaviComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+goto(){
+    window.open("https://verenasworld.github.io/simplydashboarddesign/contactmanager", "_blank");
+}
+  gotosearch(){
+    window.open("https://verenasworld.github.io/monsters-rolodex/", "blank");
+  }
+  gotofancy(){
+    window.open("https://verenasworld.github.io/fancywebgl1/", "blank");
+  }
 }

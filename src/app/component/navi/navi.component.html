@@ -2,32 +2,55 @@
   class="example-container" (backdropClick)="close('')">
   <mat-sidenav #sidenav (keydown.escape)="close('')" disableClose>
     <button mat-fab (click)="close('')"><mat-icon>clear</mat-icon></button>
-
+    <p class="vericool">thisPage</p>
+    <mat-divider></mat-divider>
    <div class="navibutton">
-     <button mat-fab color="primary" >
+     <button mat-fab color="primary" matTooltip="HOME"
+             [matTooltipPosition]="position.value" routerLink="home">
      <mat-icon>home</mat-icon>
    </button>
-     <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+     <button mat-fab color="primary" matTooltip="NEWS"
+             [matTooltipPosition]="position.value">
+       <mat-icon matBadge="1" matBadgeColor="accent" routerLink="news">feedback</mat-icon>
      </button>
-     <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+     <button mat-fab color="primary"matTooltip="FORM"
+             [matTooltipPosition]="position.value" routerLink="form">
+       <mat-icon>email</mat-icon>
      </button>
-     <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+     <button mat-fab color="primary" matTooltip="PLAY"
+             [matTooltipPosition]="position.value" routerLink="carousel">
+       <mat-icon>play_circle_outline</mat-icon>
      </button>
-     <button mat-fab color="primary" >
-       <mat-icon>home</mat-icon>
+     <button mat-fab color="primary"matTooltip="ACCOUNT"
+             [matTooltipPosition]="position.value">
+       <mat-icon>manage_accounts</mat-icon>
      </button>
    </div>
+    <p class="vericool">GithubPages</p>
+    <mat-divider></mat-divider>
+    <div class="navibutton">
+      <button mat-fab color="primary" matTooltip="Search" (click)="gotosearch()"
+              [matTooltipPosition]="position.value">
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-fab color="primary" matTooltip="fancy" (click)="gotofancy()"
+              [matTooltipPosition]="position.value">
+        <mat-icon>feedback</mat-icon>
+      </button>
+      <button mat-fab color="primary" matTooltip="contact"
+              [matTooltipPosition]="position.value" (click)="goto()">
+        <mat-icon>person</mat-icon>
+      </button>
+    </div>
+    <p class="vericool">socialMedia</p>
+    <p class="vericool">MWP</p>
+    <mat-divider></mat-divider>
   </mat-sidenav>
-
   <mat-sidenav-content>
     <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
     <p>{{reason}}</p>
-    <app-carousel></app-carousel>
-    <app-form></app-form>
-    <app-news></app-news>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
 
