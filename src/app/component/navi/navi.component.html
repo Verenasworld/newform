@@ -5,13 +5,12 @@
 
    <div class="navibutton">
      <button mat-fab color="primary" matTooltip="HOME"
-             [matTooltipPosition]="position.value"
-              [routerLink]="">
+             [matTooltipPosition]="position.value" routerLink="home">
      <mat-icon>home</mat-icon>
    </button>
-     <button mat-fab color="primary" matTooltip="FEEDBACK"
+     <button mat-fab color="primary" matTooltip="NEWS"
              [matTooltipPosition]="position.value">
-       <mat-icon>feedback</mat-icon>
+       <mat-icon routerLink="news">feedback</mat-icon>
      </button>
      <button mat-fab color="primary" matTooltip="Contact Manager"
              [matTooltipPosition]="position.value" (click)="goto()">
@@ -21,8 +20,8 @@
              [matTooltipPosition]="position.value">
        <mat-icon>search</mat-icon>
      </button>
-     <button mat-fab color="primary"matTooltip="EMAIL"
-             [matTooltipPosition]="position.value">
+     <button mat-fab color="primary"matTooltip="FORM"
+             [matTooltipPosition]="position.value" routerLink="form">
        <mat-icon>email</mat-icon>
      </button>
    </div>
@@ -34,7 +33,7 @@
         <mat-icon>feedback</mat-icon>
       </button>
       <button mat-fab color="primary" matTooltip="PLAY"
-              [matTooltipPosition]="position.value">
+              [matTooltipPosition]="position.value" routerLink="carousel">
         <mat-icon>play_circle_outline</mat-icon>
       </button>
       <button mat-fab color="primary"matTooltip="ACCOUNT"
@@ -46,19 +45,12 @@
         <mat-icon>email</mat-icon>
       </button>
     </div>
-
-
-
   </mat-sidenav>
-
   <mat-sidenav-content>
     <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
     <p>{{reason}}</p>
-    <router-outlet>
-          <app-carousel></app-carousel>
-          <app-form></app-form>
-    </router-outlet>
-
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
 
