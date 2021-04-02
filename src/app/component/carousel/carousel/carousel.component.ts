@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {animate, style, transition, trigger} from '@angular/animations';
+import { transition, trigger, useAnimation} from '@angular/animations';
+import { scaleIn, scaleOut} from './carousel.animations';
 
 @Component({
   selector: 'app-carousel',
@@ -7,13 +8,8 @@ import {animate, style, transition, trigger} from '@angular/animations';
   styleUrls: ['./carousel.component.scss'],
   animations: [
     trigger('carouselAnimation', [
-      transition('void => *', [
-        style({ opacity: 0 }),
-        animate('300ms', style({ opacity: 1 }))
-      ]),
-      transition('* => void', [
-        animate('300ms', style({ opacity: 0 }))
-      ])
+      transition('void => *', [useAnimation(scaleIn, {params: { time: '1300ms' }} )]),
+      transition('* => void', [useAnimation(scaleOut, {params: { time: '1300ms' }})]),
     ])
   ]
 })
@@ -30,19 +26,20 @@ export class CarouselComponent implements OnInit {
     { src : 'https://s18.directupload.net/images/210324/iiyxr8q4.png'},
     { src : 'https://s8.directupload.net/images/210324/m8b3t7lo.jpg'},
     { src : 'https://s8.directupload.net/images/210324/jrwc5r6m.jpg'},
+    { src : 'https://s18.directupload.net/images/210324/iiyxr8q4.png'},
   ];
   currentSlide = 0;
   constructor() { }
   onPreviousClick() {
     const previous = this.currentSlide - 1;
     this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
-    console.log("previous clicked, new current slide is: ", this.currentSlide);
+    console.log('previous clicked, new current slide is: ', this.currentSlide);
   }
 
   onNextClick() {
     const next = this.currentSlide + 1;
     this.currentSlide = next === this.slides.length ? 0 : next;
-    console.log("next clicked, new current slide is: ", this.currentSlide);
+    console.log('next clicked, new current slide is: ', this.currentSlide);
   }
 
   ngOnInit(): void {
