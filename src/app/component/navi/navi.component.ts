@@ -23,5 +23,10 @@ export class NaviComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+goto(){
+    window.open("https://verenasworld.github.io/simplydashboarddesign/contactmanager", "_blank");
+}
+  gotosearch(){
+    window.open("https://verenasworld.github.io/monsters-rolodex/", "blank");
+  }
 }

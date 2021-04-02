@@ -5,20 +5,21 @@
 
    <div class="navibutton">
      <button mat-fab color="primary" matTooltip="HOME"
-             [matTooltipPosition]="position.value">
+             [matTooltipPosition]="position.value"
+              [routerLink]="">
      <mat-icon>home</mat-icon>
    </button>
      <button mat-fab color="primary" matTooltip="FEEDBACK"
              [matTooltipPosition]="position.value">
        <mat-icon>feedback</mat-icon>
      </button>
-     <button mat-fab color="primary" matTooltip="PLAY"
-             [matTooltipPosition]="position.value">
-       <mat-icon>play_circle_outline</mat-icon>
+     <button mat-fab color="primary" matTooltip="Contact Manager"
+             [matTooltipPosition]="position.value" (click)="goto()">
+       <mat-icon>contact_page</mat-icon>
      </button>
-     <button mat-fab color="primary" matTooltip="ACCOUNT"
+     <button mat-fab color="primary" matTooltip="Search" (click)="gotosearch()"
              [matTooltipPosition]="position.value">
-       <mat-icon>manage_accounts</mat-icon>
+       <mat-icon>search</mat-icon>
      </button>
      <button mat-fab color="primary"matTooltip="EMAIL"
              [matTooltipPosition]="position.value">
