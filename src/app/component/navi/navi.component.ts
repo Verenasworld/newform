@@ -29,4 +29,7 @@ goto(){
   gotosearch(){
     window.open("https://verenasworld.github.io/monsters-rolodex/", "blank");
   }
+  gotofancy(){
+    window.open("https://verenasworld.github.io/fancywebgl1/", "blank");
+  }
 }

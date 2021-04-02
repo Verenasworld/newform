@@ -11,7 +11,7 @@
    </button>
      <button mat-fab color="primary" matTooltip="NEWS"
              [matTooltipPosition]="position.value">
-       <mat-icon routerLink="news">feedback</mat-icon>
+       <mat-icon matBadge="1" matBadgeColor="accent" routerLink="news">feedback</mat-icon>
      </button>
      <button mat-fab color="primary"matTooltip="FORM"
              [matTooltipPosition]="position.value" routerLink="form">
@@ -23,7 +23,7 @@
      </button>
      <button mat-fab color="primary"matTooltip="ACCOUNT"
              [matTooltipPosition]="position.value">
-       <mat-icon matBadge="1" matBadgeColor="accent">manage_accounts</mat-icon>
+       <mat-icon>manage_accounts</mat-icon>
      </button>
    </div>
     <p class="vericool">GithubPages</p>
@@ -33,12 +33,17 @@
               [matTooltipPosition]="position.value">
         <mat-icon>search</mat-icon>
       </button>
-      <button mat-fab color="primary" matTooltip="FEEDBACK"
+      <button mat-fab color="primary" matTooltip="fancy" (click)="gotofancy()"
               [matTooltipPosition]="position.value">
         <mat-icon>feedback</mat-icon>
       </button>
+      <button mat-fab color="primary" matTooltip="contact"
+              [matTooltipPosition]="position.value" (click)="goto()">
+        <mat-icon>person</mat-icon>
+      </button>
     </div>
     <p class="vericool">socialMedia</p>
+    <p class="vericool">MWP</p>
     <mat-divider></mat-divider>
   </mat-sidenav>
   <mat-sidenav-content>
