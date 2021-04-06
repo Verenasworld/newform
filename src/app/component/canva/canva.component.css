@@ -1,15 +1,24 @@
+.supercontainer{
+  margin: 20px;
+}
 .images{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 20px;
 }
 .image{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+.image:hover{
+  transform: scale(1.1);
+  transition-duration: 3s;
+}
 .counting{
   display: flex;
   flex-direction: row;
 }
+

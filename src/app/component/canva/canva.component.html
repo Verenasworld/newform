@@ -1,61 +1,102 @@
-<h1>Gallery to vote</h1>
-<mat-tab-group>
-  <mat-tab label="skizzen"> <div class="container">
-    <div class="images">
-      <div class="image">
-        <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
-        <p>{{counter}}</p>
+<div class="supercontainer"><h1>Gallery to Vote</h1>
+  <mat-tab-group>
+    <mat-tab label="skizzen"> <div class="container">
+      <div class="images">
+        <div class="image">
+          <img id="ich" src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
+         <div class="counting"> <mat-icon>favorite</mat-icon><p>{{counter}}</p></div>
+        </div>
+        <div class="image">
+          <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <div class="counting"> <mat-icon>favorite</mat-icon><p>{{counter}}</p></div>
+        </div>
+        <div class="image">
+          <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
+          <div class="counting"> <mat-icon>favorite</mat-icon><p>{{counter}}</p></div>
+        </div>
+        <div class="image">
+          <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <div class="counting"> <mat-icon>favorite</mat-icon><p>{{counter}}</p></div>
+        </div>
       </div>
-      <div class="image">
-        <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
-        <p>{{counter}}</p>
+    </div> </mat-tab>
+    <mat-tab label="Photos"> <div class="container">
+      <div class="images">
+        <div class="image">
+          <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
       </div>
-      <div class="image">
-        <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
-        <p>{{counter}}</p>
+    </div></mat-tab>
+    <mat-tab label="creativeStuff"> <div class="container">
+      <div class="images">
+        <div class="image">
+          <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
       </div>
-      <div class="image">
-        <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
-        <p>{{counter}}</p>
+    </div></mat-tab>
+    <mat-tab label="potrait"> <div class="container">
+      <div class="images">
+        <div class="image">
+          <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
       </div>
+    </div></mat-tab>
+    <mat-tab label="sport"> <div class="container">
+      <div class="images">
+        <div class="image">
+          <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+        <div class="image">
+          <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
+          <p>{{counter}}</p>
+        </div>
+      </div>
+    </div></mat-tab>
 
-    </div>
-  </div> </mat-tab>
-  <mat-tab label="Photos"> <div class="container">
-    <div class="images">
-      <div class="image">
-        <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-      <div class="image">
-        <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-      <div class="image">
-        <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-    </div>
-  </div></mat-tab>
-  <mat-tab label="creativeStuff"> <div class="container">
-    <div class="images">
-      <div class="image">
-        <img src="assets/Iche1%20kopieren%201.jpg" alt="girl" width="700" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-      <div class="image">
-        <img src="assets/flowervs.jpg" alt="girl" width="500" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-      <div class="image">
-        <img src="assets/ostereier.jpg" alt="girl" width="900" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-      <div class="image">
-        <img src="assets/PSX_20200302_102403.jpg" alt="girl" width="500" height="500" (click)="like()" >
-        <p>{{counter}}</p>
-      </div>
-    </div>
-  </div></mat-tab>
-</mat-tab-group>
 
+  </mat-tab-group>
+</div>
