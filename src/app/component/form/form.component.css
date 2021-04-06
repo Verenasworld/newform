@@ -9,3 +9,9 @@ h2{
   font-weight: lighter;
   letter-spacing: 3px;
 }
+.myaccountform{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 50px;
+}

@@ -1,0 +1,16 @@
+#myVideo {
+  top: -20px;
+  min-width: 100%;
+  min-height: 100vh;
+background-position: top;
+}
+h1{
+  position: absolute;
+  top: 10em;
+  left: 10em;
+}
+p {
+  position: absolute;
+  top: 20em;
+  left: 20em;
+}

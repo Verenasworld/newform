@@ -32,7 +32,7 @@ import {CanvaComponent} from './component/canva/canva.component';
     MaterialModule,
     FlexLayoutModule,
     MatCarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
