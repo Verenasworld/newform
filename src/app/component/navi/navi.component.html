@@ -5,24 +5,24 @@
     <p class="vericool">thisPage</p>
     <mat-divider></mat-divider>
    <div class="navibutton">
-     <button mat-fab color="primary" matTooltip="HOME"
+     <button mat-fab  (click)="close('')" color="primary" matTooltip="HOME"
              [matTooltipPosition]="position.value" routerLink="home">
-     <mat-icon>home</mat-icon>
+     <mat-icon >home</mat-icon>
    </button>
-     <button mat-fab color="primary" matTooltip="NEWS"
+     <button mat-fab (click)="close('')" color="primary" matTooltip="NEWS"
              [matTooltipPosition]="position.value">
        <mat-icon matBadge="1" matBadgeColor="accent" routerLink="news">feedback</mat-icon>
      </button>
-     <button mat-fab color="primary"matTooltip="FORM"
+     <button mat-fab (click)="close('')" color="primary"matTooltip="Mat stepper form"
              [matTooltipPosition]="position.value" routerLink="form">
        <mat-icon>email</mat-icon>
      </button>
-     <button mat-fab color="primary" matTooltip="PLAY"
+     <button mat-fab (click)="close('')" color="primary" matTooltip="image carousel"
              [matTooltipPosition]="position.value" routerLink="carousel">
        <mat-icon>play_circle_outline</mat-icon>
      </button>
-     <button mat-fab color="primary"matTooltip="ACCOUNT"
-             [matTooltipPosition]="position.value">
+     <button mat-fab (click)="close('')" color="primary" matTooltip="image voting"
+             [matTooltipPosition]="position.value" routerLink="canva">
        <mat-icon>manage_accounts</mat-icon>
      </button>
    </div>
