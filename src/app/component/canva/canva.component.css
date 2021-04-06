@@ -1,0 +1,15 @@
+.images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.image{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.counting{
+  display: flex;
+  flex-direction: row;
+}
