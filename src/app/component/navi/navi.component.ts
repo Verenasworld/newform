@@ -6,7 +6,7 @@ import {TooltipPosition} from '@angular/material/tooltip';
 @Component({
   selector: 'app-navi',
   templateUrl: './navi.component.html',
-  styleUrls: ['./navi.component.css']
+  styleUrls: ['./navi.component.scss']
 })
 export class NaviComponent implements OnInit {
   @ViewChild('sidenav') sidenav: MatSidenav;
