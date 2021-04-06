@@ -8,9 +8,15 @@ h1{
   position: absolute;
   top: 10em;
   left: 10em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-left: 50px;
 }
 p {
   position: absolute;
   top: 20em;
   left: 20em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-left: 50px;
 }

@@ -18,11 +18,17 @@ mat-sidenav{
 }
 .menubutton{
   margin: 10px;
+  z-index: 100;
 }
 .vericool{
   padding-top: 50px;
 }
 .hover-class{
   size: 20px;
+}
+#myVideo {
+  position:fixed;
+  height: 100vh;
+  margin-top: -100px;
 }
 
