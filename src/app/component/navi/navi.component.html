@@ -5,24 +5,51 @@
     <p class="vericool">thisPage</p>
     <mat-divider></mat-divider>
    <div class="navibutton">
-     <button mat-fab  (click)="close('')" color="primary" matTooltip="HOME"
-             [matTooltipPosition]="position.value" routerLink="home">
+     <button
+       mat-fab  (click)="close('')"
+       color="primary"
+       matTooltip="HOME"
+       [matTooltipPosition]="position.value"
+       routerLink="home"
+       routerLinkActive="active">
      <mat-icon >home</mat-icon>
    </button>
-     <button mat-fab (click)="close('')" color="primary" matTooltip="NEWS"
-             [matTooltipPosition]="position.value">
-       <mat-icon matBadge="1" matBadgeColor="accent" routerLink="news">feedback</mat-icon>
+     <button
+       mat-fab (click)="close('')"
+       color="primary"
+       matTooltip="NEWS"
+       [matTooltipPosition]="position.value">
+       <mat-icon
+         matBadge="1"
+         matBadgeColor="accent"
+         routerLink="news"
+         routerLinkActive="active">feedback
+       </mat-icon>
      </button>
-     <button mat-fab (click)="close('')" color="primary"matTooltip="Mat stepper form"
-             [matTooltipPosition]="position.value" routerLink="form">
+     <button
+       mat-fab (click)="close('')"
+       color="primary"
+       matTooltip="Mat stepper form"
+       [matTooltipPosition]="position.value"
+       routerLink="form"
+       routerLinkActive="active">
        <mat-icon>email</mat-icon>
      </button>
-     <button mat-fab (click)="close('')" color="primary" matTooltip="image carousel"
-             [matTooltipPosition]="position.value" routerLink="carousel">
+     <button
+       mat-fab (click)="close('')"
+       color="primary" matTooltip="image carousel"
+       [matTooltipPosition]="position.value"
+       routerLink="carousel"
+       routerLinkActive="active">
        <mat-icon>play_circle_outline</mat-icon>
      </button>
-     <button mat-fab (click)="close('')" color="primary" matTooltip="image voting"
-             [matTooltipPosition]="position.value" routerLink="canva">
+     <button
+       mat-fab (click)="close('')"
+       color="primary"
+       matTooltip="image voting"
+       [matTooltipPosition]="position.value"
+       routerLink="canva"
+       routerLinkActive="active">
        <mat-icon>manage_accounts</mat-icon>
      </button>
    </div>
@@ -52,9 +79,9 @@
   </mat-sidenav>
   <mat-sidenav-content>
      <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
-    <video autoplay muted loop id="myVideo">
-      <source src="assets/Ink%20-%2058193.mp4" type="video/mp4">
-    </video>
+<!--    <video autoplay muted loop id="myVideo">-->
+<!--      <source src="assets/Ink%20-%2058193.mp4" type="video/mp4">-->
+<!--    </video>-->
 
 
     <router-outlet></router-outlet>
