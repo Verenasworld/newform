@@ -4,6 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100vh;
 }
 .navibutton{
   display: flex;
@@ -24,3 +25,4 @@ mat-sidenav{
 .hover-class{
   size: 20px;
 }
+
