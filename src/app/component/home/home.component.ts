@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit {
 
   goToVoting() {
     // this.router.navigateByUrl('/canva');
-    this.router.navigate(['/canva'], {relativeTo: this.route});
+    this.router.navigate(['/canva'], {queryParams: {id: 1, name: 'voting' }});
   }
 }
