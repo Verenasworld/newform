@@ -50,7 +50,7 @@
        [matTooltipPosition]="position.value"
        routerLink="canva"
        routerLinkActive="active">
-       <mat-icon>manage_accounts</mat-icon>
+       <mat-icon>favorite</mat-icon>
      </button>
    </div>
     <p class="vericool">GithubPages</p>
@@ -71,18 +71,11 @@
     </div>
     <p class="vericool">socialMedia</p>
     <p class="vericool">MWP</p>
-    <button mat-fab color="primary" matTooltip="github"
-            [matTooltipPosition]="position.value" >
-      <mat-icon>github-box</mat-icon>
-    </button>
+
     <mat-divider></mat-divider>
   </mat-sidenav>
   <mat-sidenav-content>
      <p><button class="menubutton" mat-fab color="accent" (click)="sidenav.open()"><mat-icon>menu</mat-icon></button></p>
-<!--    <video autoplay muted loop id="myVideo">-->
-<!--      <source src="assets/Ink%20-%2058193.mp4" type="video/mp4">-->
-<!--    </video>-->
-
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>

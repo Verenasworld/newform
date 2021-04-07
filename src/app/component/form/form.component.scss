@@ -9,9 +9,18 @@ h2{
   font-weight: lighter;
   letter-spacing: 3px;
 }
-.myaccountform{
+
+
+.links{
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin: 50px;
+  flex-direction: row;
+}
+a{
+  padding-right: 20px;
+  color: white;
+}
+a{
+&.active{
+   color:#C2185B;
+ }
 }

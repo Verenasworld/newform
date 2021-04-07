@@ -12,6 +12,8 @@ import {NaviComponent} from './component/navi/navi.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './component/home/home.component';
 import {CanvaComponent} from './component/canva/canva.component';
+import { MatFormFieldComponent } from './component/form/mat-form-field/mat-form-field.component';
+import { MatStepperComponent } from './component/form/mat-stepper/mat-stepper.component';
 
 
 
@@ -24,7 +26,9 @@ import {CanvaComponent} from './component/canva/canva.component';
     NewsComponent,
     NaviComponent,
     HomeComponent,
-    CanvaComponent
+    CanvaComponent,
+    MatFormFieldComponent,
+    MatStepperComponent
   ],
   imports: [
     BrowserModule,
