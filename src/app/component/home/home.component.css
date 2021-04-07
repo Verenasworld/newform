@@ -16,8 +16,11 @@ p {
   margin-left: 50px;
 }
 #myVideo {
-  height: 107vh;
+  min-height: 100vh;
+  min-width: 100vh;
+  /*height: 107vh;*/
   margin-top: -190px;
+
 
 
 }
