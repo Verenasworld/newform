@@ -1,0 +1,6 @@
+.mat-stepper-container{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 50px;
+}

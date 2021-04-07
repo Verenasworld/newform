@@ -1,42 +1,10 @@
 <div class="myform">
 <h2>FILL OUT MY COOL FORM AND START IN TO MY WORLD! </h2>
-  <div>
-    <p>mat-stepper</p>
-    <mat-vertical-stepper #stepper>
-      <mat-step>
-        <form>
-          <ng-template matStepLabel>Fill out your Username</ng-template>
-          <mat-form-field>
-            <mat-label>Name</mat-label>
-            <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-          </mat-form-field>
-          <div>
-            <button mat-button matStepperNext>Next</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step >
-        <form >
-          <ng-template matStepLabel>Fill out your Email</ng-template>
-          <mat-form-field>
-            <mat-label>Email</mat-label>
-            <input matInput formControlName="secondCtrl" placeholder="Janis-Joplin-Promenade 6-8/5/29"
-                   required>
-          </mat-form-field>
-          <div>
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext>Next</button>
-          </div>
-        </form>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Send me the form </ng-template>
-        <p>Hi ( hier kommmt der Name hin der oben eingeben worden ist ) </p>
-        <div>
-          <button mat-button matStepperNext color="accent">Start</button>
-        </div>
-      </mat-step>
-    </mat-vertical-stepper></div>
+  <div class="links">
+    <a [routerLink]="['mat-stepper']">mat-stepper</a>
+    <a [routerLink]="['mat-form-field']">mat-form</a>
+  </div>
+  <router-outlet></router-outlet>
 </div>
-  <app-mat-form-field></app-mat-form-field>
+
 
