@@ -14,8 +14,6 @@
   flex-wrap: wrap;
 }
 .image:hover{
-  transform: scale(1.1);
-  transition-duration: 3s;
 }
 .counting{
   display: flex;
