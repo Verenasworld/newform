@@ -14,6 +14,7 @@ import { HomeComponent } from './component/home/home.component';
 import {CanvaComponent} from './component/canva/canva.component';
 import { MatFormFieldComponent } from './component/form/mat-form-field/mat-form-field.component';
 import { MatStepperComponent } from './component/form/mat-stepper/mat-stepper.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -37,6 +38,7 @@ import { MatStepperComponent } from './component/form/mat-stepper/mat-stepper.co
     FlexLayoutModule,
     MatCarouselModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
